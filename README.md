@@ -41,7 +41,7 @@ We want basic *ls* command with options:
 
 ### Create parser definition
 
-```java
+```csharp
 OptParser options = OptParser.createOptionParser("ls", "Show directory
 contents")
     .addOption('f', "files", OptParser.OPTIONAL, "", "Just files")
