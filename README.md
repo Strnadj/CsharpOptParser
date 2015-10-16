@@ -1,7 +1,9 @@
 # C# Option Parser
 
-[![Build Status](https://ci.appveyor.com/api/projects/status/y4aadk071ynavn1r?svg=true)](https://ci.appveyor.com/project/Strnadj/csharpoptparser)
-[![Coverage Status](https://coveralls.io/repos/Strnadj/CsharpOptParser/badge.svg?branch=master&service=github)](https://coveralls.io/github/Strnadj/CsharpOptParser?branch=master)
+| Windows | Linux / OS X | Coverage |
+|:-:|:-:|:-:|
+| [![Build Status](https://ci.appveyor.com/api/projects/status/y4aadk071ynavn1r?svg=true)](https://ci.appveyor.com/project/Strnadj/csharpoptparser) | [![Build Status](https://travis-ci.org/Strnadj/CsharpOptParser.svg?branch=master)](https://travis-ci.org/Strnadj/CsharpOptParser) | [![Coverage Status](https://coveralls.io/repos/Strnadj/CsharpOptParser/badge.svg?branch=master&service=github)](https://coveralls.io/github/Strnadj/CsharpOptParser?branch=master) |
+
 
 ## Info
 
@@ -54,7 +56,7 @@ listing");
 
 ### Create option with required value?
 
-```java
+```csharp
 .addOptionRequiredValue('t', "target", OptParser.OPTIONAL, null, "Target
 folder")
 ```
@@ -62,8 +64,8 @@ folder")
 
 ### Get help?
 
-```java
-System.out.println(options.getHelp());
+```csharp
+Console.WriteLine(options.getHelp());
 ```
 
 
@@ -78,19 +80,18 @@ Optional options:
 
 ### Parse parameters
 
-```java
+```csharp
 try {
     options.parseArguments(args);
 } catch(Exception e) {
-    System.err.println(e.getMessage());
-    System.exit(-1);
+    Console.WriteLine(e.Message);
+    Environment.Exit(-1);
 }
 ```
 
 ### Getting parameters
 
-```java
-
+```csharp
 // Get if parameter was set
 if (options.getOption("help") != null) {
     // Parameter help was set
