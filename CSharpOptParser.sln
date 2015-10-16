@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOptParser", "CSharpOptParser\CSharpOptParser.csproj", "{0F69AC03-F78A-49C2-8BAB-EAD850E03EA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C356762C-5361-4832-8901-37BF21972C5C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOptParser.Tests", "CSharpOptParser.Tests\CSharpOptParser.Tests.csproj", "{D62695EE-FC2B-4E51-9995-F84A2227CFDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F69AC03-F78A-49C2-8BAB-EAD850E03EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F69AC03-F78A-49C2-8BAB-EAD850E03EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F69AC03-F78A-49C2-8BAB-EAD850E03EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F69AC03-F78A-49C2-8BAB-EAD850E03EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62695EE-FC2B-4E51-9995-F84A2227CFDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62695EE-FC2B-4E51-9995-F84A2227CFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62695EE-FC2B-4E51-9995-F84A2227CFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62695EE-FC2B-4E51-9995-F84A2227CFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
