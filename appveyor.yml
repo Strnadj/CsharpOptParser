@@ -21,5 +21,5 @@ build:
   project: CSharpOptParser.sln
 
 after_test: 
-    - packages\OpenCover.4.5.3522\OpenCover.Console.exe -register:user -filter:"+[CSharpOptParser*]*" -target:"packages\NUnit.Runners.2.6.4\tools\nunit-console.exe" -targetargs:"/noshadow /domain:single  ChattyCrow.Tests\bin\debug\CSharpOptParser.Tests.dll" -output:coverage.xml
+    - packages\OpenCover.4.5.3522\OpenCover.Console.exe -register:user -filter:"+[CSharpOptParser*]*" -target:"packages\NUnit.Runners.2.6.4\tools\nunit-console.exe" -targetargs:"/noshadow /domain:single  CSharpOptParser.Tests\bin\debug\CSharpOptParser.Tests.dll" -output:coverage.xml
     - packages\coveralls.io.1.1.86\tools\coveralls.net.exe --opencover coverage.xml
